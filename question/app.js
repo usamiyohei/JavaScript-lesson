@@ -56,7 +56,6 @@ function sayHello(){
 }
  sayHello();
 
-
  const sayWorld = function(){
     console.log('World');
  };
@@ -103,11 +102,13 @@ console.log('5を3で割った余りは' + result + 'です。')
 //Q10
 // xは関数内で定義された変数であり、スコープが関数内に限定されている。
 // そのため関数の外からxを参照することはできずエラーが出力される。
+// 関数内のみ参照するスコープをローカル関数、関数外でも参照できるスコープを
+// グローバル関数という。
 
 
 // 応用問題
 // Q1
-console.log(Math .floor(Math .random() * 10));
+console.log(Math .floor(Math.random() * 10));
 
 // Q2
 setTimeout (function(){
@@ -126,7 +127,7 @@ if (num > 0){
 }
 // Q4
 let numbers =[];
-for(let i = 0; i< 100 ; i++ ){
+for(let i = 0; i< 100; i++ ){
   numbers.push(i);
 }
 
